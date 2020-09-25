@@ -1,5 +1,71 @@
+html {
+  font-family: "Baloo Tammudu 2";
+  overflow: hidden;
+}
+html body {
+  margin: 0;
+}
 html body main.index {
-  height: 85vh;
+  height: 90vh;
+  overflow: hidden;
+  background-color: red;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body main.index .filter {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  opacity: 0.9;
+  position: absolute;
+}
+html body main.index .titrage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  width: 90%;
+  padding: 0 10%;
+}
+html body main.index .titrage img {
+  height: 250px;
+  width: 250px;
+}
+html body main.index .titrage h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+html body main.index .titrage h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+html body main.index .modal-draggable {
+  position: fixed;
+  background-color: white;
+  height: 80vh;
+  width: 100%;
+  bottom: -70vh;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 21px -13px black;
+  z-index: 999;
+  transition: 300ms;
+}
+html body main.index .modal-draggable.active {
+  bottom: 0;
+}
+html body main.index .modal-draggable .long-btn {
+  height: 5px;
+  width: 30%;
+  background-color: #bbbaba;
+  border-radius: 30px;
+  margin: 5vh 0;
 }
 
 /*# sourceMappingURL=__mixin.css.map */
